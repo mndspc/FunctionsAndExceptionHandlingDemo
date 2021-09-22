@@ -10,14 +10,16 @@ namespace FunctionsAndExceptionHandling
 
         public void ValidateEmployeeCode(int empCode,string empName)
         {
+            this.EmpCode = empCode;
             if (EmpCode <= 0)
             {
                 throw new InvalidEmployeeCode();
             }
             else
             {
-               this.EmpCode = empCode;
+              
                 this.EmpName = empName;
+                Console.WriteLine(this.Display());
             }
         }
 

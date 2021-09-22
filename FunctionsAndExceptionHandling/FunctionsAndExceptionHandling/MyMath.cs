@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 
 namespace FunctionsAndExceptionHandling
 {
@@ -118,5 +118,23 @@ namespace FunctionsAndExceptionHandling
                 MyRecFunction(x);
             }
         }
+
+        public Employee GetEmployee()
+        {
+            //Employee employee = new Employee {EmpCode = 100,EmpName = "Scott"  };
+            //return employee;
+            return new Employee {EmpCode=100,EmpName="Scott" };
+        }
+
+        public List<Employee> GetEmployees()
+        {
+            List<Employee> employees = new List<Employee> {
+                new Employee{EmpCode=100,EmpName="Scott" },
+                new Employee{EmpCode=101,EmpName="Tiger" },
+                 new Employee{EmpCode=102,EmpName="Smith" }
+            };
+            return employees;
+        }
+
     }
 }

@@ -11,7 +11,7 @@ namespace FunctionsAndExceptionHandling
             try
             {
                 Employee employee = new Employee();
-                employee.ValidateEmployeeCode(0, "Scott");
+                employee.ValidateEmployeeCode(100, "Scott");
             }catch(InvalidEmployeeCode ex)
             {
                 Console.WriteLine(ex.Message);
